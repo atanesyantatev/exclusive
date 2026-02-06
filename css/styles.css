@@ -1030,3 +1030,52 @@ input:focus {
   align-items: center;
 }
 
+.footer_container {
+  max-width: 1140px;     
+  margin: 0 auto;      
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  padding: 5rem 2rem;   
+  color: var(--colo-white-1);
+}
+
+
+
+.footer_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.footer_logo {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer_item {
+    align-items: center;
+  }
+}
+
+
+.footer_bottom {
+  text-align: center;
+}
+
