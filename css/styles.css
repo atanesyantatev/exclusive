@@ -1074,6 +1074,17 @@ input:focus {
   }
 }
 
+.card_top {
+  width: 100%;
+  height: auto; 
+}
+
+.card_img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 .footer_bottom {
   text-align: center;
