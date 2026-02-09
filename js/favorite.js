@@ -32,19 +32,41 @@ window.addEventListener("load", () => {
 
         likesContainer.append(likeItem);
 
-        // Add click listener to remove from favorites
+     
         const favIcon = likeItem.querySelector(".fav_icon");
 
         favIcon.addEventListener("click", () => {
-            // Remove from DOM
+      
             likeItem.remove();
 
-            // Remove from likes array
+       
             likes = likes.filter(id => id !== f.id);
 
-            // Update localStorage
+       
             localStorage.setItem("likedCards", JSON.stringify(likes));
         });
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const Nav = document.querySelector(".mobile_nav");
+
+    if (!hamburger || !Nav) return; 
+
+    hamburger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        Nav.classList.toggle("mobile_nav_hide");
+        
+    });
+
+    document.body.addEventListener("click", (e) => {
+        if (!Nav.contains(e.target) && !hamburger.contains(e.target)) {
+            Nav.classList.add("mobile_nav_hide");
+        }
     });
 });
 
