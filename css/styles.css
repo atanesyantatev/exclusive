@@ -1041,11 +1041,14 @@ input:focus {
   align-items: center;
 }
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> eeb14ca65c33786589b16089c89ac82bd14666da
 .footer_container {
   max-width: 1140px;     
   margin: 0 auto;      
@@ -1090,10 +1093,27 @@ input:focus {
   }
 }
 
+<<<<<<< HEAD
+=======
+.card_top {
+  width: 100%;
+  height: auto; 
+}
+
+.card_img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+>>>>>>> eeb14ca65c33786589b16089c89ac82bd14666da
 
 .footer_bottom {
   text-align: center;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> eeb14ca65c33786589b16089c89ac82bd14666da
